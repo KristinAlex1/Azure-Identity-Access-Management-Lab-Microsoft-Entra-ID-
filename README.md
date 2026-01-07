@@ -3,7 +3,7 @@
 ## Overview
 This project demonstrates hands-on experience with **Microsoft Entra ID (formerly Azure Active Directory)**, focusing on cloud identity and access management.
 
-The lab is designed to reflect a **university IT environment**, similar to **Acadia University**, where faculty, staff, students, and IT administrators require different access levels, security controls, and monitoring.
+The lab is designed to reflect a **university IT environment**, where faculty, staff, students, and IT administrators require different access levels, security controls, and monitoring.
 
 This project serves as a **starter identity lab** and provides a strong foundation for future work with **Hybrid Active Directory, Microsoft Intune, and Microsoft 365 administration**.
 
