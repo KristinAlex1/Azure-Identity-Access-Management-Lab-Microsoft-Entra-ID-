@@ -1,11 +1,11 @@
 # Azure Identity & Access Mini-Lab (Microsoft Entra ID)
 
-## Project Overview
-This project demonstrates hands-on experience with **Microsoft Entra ID (formerly Azure Active Directory)**, focusing on identity and access management in a cloud environment.
+## Overview
+This project demonstrates hands-on experience with **Microsoft Entra ID (formerly Azure Active Directory)**, focusing on cloud identity and access management.
 
-The lab is designed to reflect a **university IT environment**, similar to **Acadia University**, where faculty, staff, students, and IT administrators require different access levels and security controls.
+The lab is designed to reflect a **university IT environment**, similar to **Acadia University**, where faculty, staff, students, and IT administrators require different access levels, security controls, and monitoring.
 
-This project serves as a **starter identity lab** and forms the foundation for future expansion into **Hybrid Active Directory, Microsoft Intune, and Microsoft 365 administration**.
+This project serves as a **starter identity lab** and provides a strong foundation for future work with **Hybrid Active Directory, Microsoft Intune, and Microsoft 365 administration**.
 
 ---
 
@@ -18,32 +18,32 @@ This project serves as a **starter identity lab** and forms the foundation for f
 ---
 
 ## 1. Entra ID Tenant Setup
-An Entra ID tenant was created and reviewed to represent the organization’s **identity boundary**, where all users, roles, and security policies are managed.
+An Entra ID tenant was created and reviewed to represent the organization’s **identity boundary**, where all users, roles, and security policies are managed centrally.
 
-**Screenshot – Tenant Overview**
-![Tenant Overview] 
+**Tenant Overview**
+![Tenant Overview](screenshots/Tenant-Overview.png)
 
 ---
 
 ## 2. User Management
-Cloud users were created to represent common roles in a university environment:
-- IT Administrator
-- IT Support
-- Faculty/Staff
+Cloud users were created to represent common roles found in a university environment:
+- IT Administrator  
+- IT Support  
+- Faculty/Staff  
 - Student  
 
-Password policies were configured and users were required to change their password at first sign-in.
+Password policies were configured, and users were required to change their password at first sign-in to improve security.
 
-**Screenshot – Users List**
+**Users List**
 ![Users List](screenshots/users-list.png)
 
-**Screenshot – Individual User Profile**
+**Individual User Profile**
 ![User Profile](screenshots/user-profile-itadmin.png)
 
 ---
 
 ## 3. Security Groups
-Security groups were created to enable **group-based access control**, allowing permissions and policies to scale efficiently.
+Security groups were created to support **group-based access control**, allowing permissions and policies to be applied efficiently and at scale.
 
 Groups created:
 - `IT_Admins`
@@ -52,10 +52,10 @@ Groups created:
 
 Users were assigned to groups based on their organizational role.
 
-**Screenshot – Groups List**
+**Groups Overview**
 ![Groups List](screenshots/groups-list.png)
 
-**Screenshot – IT_Admins Group Membership**
+**IT_Admins Group Membership**
 ![IT Admins Group](screenshots/group-itadmins-members.png)
 
 ---
@@ -64,14 +64,15 @@ Users were assigned to groups based on their organizational role.
 Administrative roles were assigned following the **principle of least privilege** to reduce security risk.
 
 Roles assigned:
-- **User Administrator** – IT Support account
+- **User Administrator** – IT Support account  
 - **Global Reader** – Read-only administrative access  
-Global Administrator access was kept limited.
 
-**Screenshot – User Administrator Role Assignment**
+Global Administrator access was intentionally kept limited.
+
+**User Administrator Role Assignment**
 ![User Admin Role](screenshots/roles-useradmin.png)
 
-**Screenshot – Global Reader Role Assignment**
+**Global Reader Role Assignment**
 ![Global Reader Role](screenshots/roles-globalreader.png)
 
 ---
@@ -79,61 +80,61 @@ Global Administrator access was kept limited.
 ## 5. Security Configuration (MFA Enforcement)
 Privileged accounts were secured by enforcing **Multi-Factor Authentication (MFA)** using Conditional Access or Security Defaults.
 
-This ensures administrative accounts are protected against credential compromise.
+This helps protect administrative accounts from credential compromise.
 
-**Screenshot – Conditional Access Policy / Security Defaults**
+**Conditional Access / Security Defaults**
 ![Conditional Access](screenshots/conditional-access.png)
 
 ---
 
-## 6. Authentication Monitoring (Sign-in Logs)
-Sign-in logs were reviewed to verify successful authentication, MFA enforcement, and Conditional Access results.
+## 6. Authentication Monitoring (Sign-In Logs)
+Sign-in logs were reviewed to verify successful authentication, MFA enforcement, and Conditional Access outcomes.
 
-This is critical for troubleshooting access issues and detecting suspicious activity.
+This is essential for troubleshooting access issues and identifying suspicious sign-in activity.
 
-**Screenshot – Sign-in Logs**
-![Sign-in Logs](screenshots/signin-logs.png)
+**Sign-In Logs**
+![Sign-In Logs](screenshots/signin-logs.png)
 
 ---
 
 ## 7. Administrative Monitoring (Audit Logs)
 Audit logs were reviewed to track administrative actions such as:
-- User creation
-- Group membership changes
-- Role assignments
-- Security policy updates
+- User creation  
+- Group membership changes  
+- Role assignments  
+- Security policy updates  
 
-**Screenshot – Audit Logs**
+**Audit Logs**
 ![Audit Logs](screenshots/audit-logs.png)
 
 ---
 
 ## Key Concepts Practiced
-- Cloud identity management
-- Group-based access control
-- Role-based access control (RBAC)
-- Least privilege security model
-- Multi-Factor Authentication (MFA)
-- Identity monitoring and troubleshooting
+- Cloud identity management  
+- Group-based access control  
+- Role-based access control (RBAC)  
+- Least-privilege security model  
+- Multi-Factor Authentication (MFA)  
+- Identity monitoring and troubleshooting  
 
 ---
 
 ## Why This Project Is Relevant
 This project reflects real-world identity administration tasks performed by **Systems Administrators** in a university environment, including:
-- Managing faculty, staff, and student identities
-- Securing privileged administrative accounts
-- Monitoring authentication and administrative activity
-- Preparing for hybrid identity integration
+- Managing faculty, staff, and student identities  
+- Securing privileged administrative accounts  
+- Monitoring authentication and administrative activity  
+- Preparing for hybrid identity integration  
 
 ---
 
 ## Next Steps
 This lab will be expanded to include:
-- On-premises Active Directory Domain Services (AD DS)
-- Azure AD Connect (Hybrid Identity)
-- Microsoft Intune device management
-- Microsoft 365 user and license administration
-- PowerShell automation for identity tasks
+- On-premises Active Directory Domain Services (AD DS)  
+- Azure AD Connect (Hybrid Identity)  
+- Microsoft Intune device management  
+- Microsoft 365 user and license administration  
+- PowerShell automation for identity tasks  
 
 ---
 
