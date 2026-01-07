@@ -21,7 +21,7 @@ This project serves as a **starter identity lab** and provides a strong foundati
 An Entra ID tenant was created and reviewed to represent the organization’s **identity boundary**, where all users, roles, and security policies are managed centrally.
 
 **Tenant Overview**
-![Tenant Overview](screenshots/Tenant-Overview.png)
+https://github.com/KristinAlex1/Azure-AD-Microsoft-Intra-Id/blob/main/Tenant-Overview.PNG
 
 ---
 
