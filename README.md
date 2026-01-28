@@ -1,11 +1,24 @@
 # Azure Identity & Access Mini-Lab (Microsoft Entra ID)
 
-## Overview
-This project demonstrates hands-on experience with **Microsoft Entra ID (formerly Azure Active Directory)**, focusing on cloud identity and access management.
+## 🧩 Identity Architecture Summary
 
-The lab is designed to reflect a **university IT environment**, where faculty, staff, students, and IT administrators require different access levels, security controls, and monitoring.
+<img width="1536" height="1024" alt="ChatGPT Image Jan 28, 2026, 05_09_47 PM" src="https://github.com/user-attachments/assets/f49f92ec-2ca8-4548-bea7-474ca2266d1e" />
 
-This project serves as a **starter identity lab** and provides a strong foundation for future work with **Hybrid Active Directory, Microsoft Intune, and Microsoft 365 administration**.
+
+This project demonstrates a **cloud-based identity and access management environment** using **Microsoft Entra ID (Azure Active Directory)**, modeled after a **university IT organization**.
+
+A centralized **Entra ID tenant** acts as the identity boundary where users, security groups, administrative roles, and security policies are managed. Cloud users were created to represent **students, faculty/staff, IT support, and IT administrators**, each assigned appropriate access through **group-based membership** and **role-based access control (RBAC)**.
+
+Administrative privileges were delegated using **least-privilege principles**, with roles such as *User Administrator* and *Global Reader* assigned instead of broad Global Administrator access.
+
+Security posture was strengthened through **Multi-Factor Authentication (MFA)** enforcement using **Security Defaults / Conditional Access**, protecting privileged accounts from credential compromise.
+
+Authentication activity and administrative changes were monitored using **Sign-In Logs** and **Audit Logs**, enabling visibility into:
+- User authentication attempts and MFA enforcement  
+- Role assignments and group membership changes  
+- Identity-related administrative actions  
+
+Together, these components demonstrate **end-to-end cloud identity administration**, security enforcement, and monitoring workflows aligned with real-world university and enterprise IT environments.
 
 ---
 
